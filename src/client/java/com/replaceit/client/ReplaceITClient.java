@@ -50,8 +50,11 @@ public class ReplaceITClient implements ClientModInitializer {
                         return InteractionResult.PASS;
                     }
 
-                    // Retorna SUCCESS no Cliente! Isso cancela a colocação vanilla do bloco,
-                    // e apenas avisa ao Servidor: "Eu cliquei, faça a troca aí!".
+                    // CORREÇÃO: Consome o item visualmente na tela do jogador na mesma hora!
+                    if (!player.isCreative()) {
+                        handStack.shrink(1);
+                    }
+
                     return InteractionResult.SUCCESS;
                 }
             }

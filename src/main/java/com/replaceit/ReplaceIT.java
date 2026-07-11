@@ -65,7 +65,12 @@ public class ReplaceIT implements ModInitializer {
 
             BlockEntity blockEntity = world.getBlockEntity(pos);
 
-            List drops = Block.getDrops(oldState, (ServerLevel) world, pos, blockEntity, player, handStack);
+// CRIAMOS UMA FERRAMENTA FALSA (Picareta de Diamante)
+            ItemStack fakeTool = new ItemStack(net.minecraft.world.item.Items.DIAMOND_PICKAXE);
+
+            // Pedimos os drops pro jogo como se tivéssemos usado a picareta perfeita
+            List drops = Block.getDrops(oldState, (ServerLevel) world, pos, blockEntity, player, fakeTool);
+
             for (Object dropObj : drops) {
                 if (dropObj instanceof ItemStack drop) {
                     if (!player.getInventory().add(drop)) {
