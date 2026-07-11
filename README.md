@@ -1,9 +1,16 @@
 # ReplaceIT
 
-## Setup
+Um mod simples, leve e prático criado para melhorar a experiência de construção no Minecraft Survival.
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+Construir grandes estruturas pode ser um processo demorado, principalmente quando é necessário substituir vários blocos. Normalmente, você precisa quebrar o bloco antigo antes de colocar o novo, interrompendo o ritmo da construção.
 
-## License
+Com o **ReplaceIT**, essa etapa se torna muito mais rápida e intuitiva: basta segurar um bloco diferente na mão, ativar o modo **ReplaceIT** e clicar com o botão direito no bloco que deseja substituir. O bloco antigo será trocado automaticamente pelo novo, sem precisar quebrá-lo primeiro.
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+### ✨ Recursos
+
+* Substituição rápida de blocos durante a construção.
+* Mantém a praticidade do modo Survival.
+* Interface simples, sem configurações complexas.
+* Leve e otimizado para não impactar o desempenho.
+
+Ideal para construtores que querem mais fluidez e menos interrupções ao criar suas construções.
