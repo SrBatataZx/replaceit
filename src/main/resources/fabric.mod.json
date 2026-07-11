@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "replaceit",
+	"version": "1.0.0",
+	"name": "ReplaceIT",
+	"description": "Troque blocos facilmente com um clique, sem precisar quebrar e colocar novamente",
+	"authors": [
+		"SrBatataZx"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/replaceit/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.replaceit.ReplaceIT"
+		],
+		"client": [
+			"com.replaceit.client.ReplaceITClient"
+		]
+	},
+	"mixins": [
+		"replaceit.mixins.json",
+		{
+			"config": "replaceit.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
